@@ -1,0 +1,59 @@
+# 2019年12月10日
+
+[general]
+
+[dns]
+server=119.29.29.29
+server=223.5.5.5
+
+[policy]
+static=n3ro, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/N3RO.png
+static=Ingress, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Ingress.png
+static=Pornhub, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Spotify.png
+static=Pornhub, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Pornhub.png
+static=Netflix, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netflix_Letter.png
+static=YouTube, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/YouTube_Letter.png
+static=Google, proxy, IPLC 川港 01 (2.5 倍率), img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Google.png
+static=Final, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
+static=ForeignMedia, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ForeignMedia.png
+static=DomesticMedia, direct, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/DomesticMedia.png
+static=Apple, direct, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
+
+[server_remote]
+https://kcssr.best/link/CpySrXHU8ZmXTe7p, tag=tron, enabled=true
+https://nnn3ro.link/api/client/sip002?id=3252&password=%26GgON4WRuDO%25rJkh, tag=n3ro, enabled=true
+
+[filter_remote]
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Unbreak.list, tag=Unbreak, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list, tag=Advertising, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list, tag=Hijacking, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/Netflix.list, tag=Netflix, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/Pornhub.list, tag=Pornhub, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/YouTube.list, tag=YouTube, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/Spotify.list, tag=Spotify, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/ForeignMedia.list, tag=ForeignMedia, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Google.list, tag=Google, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Global.list, tag=Global, enabled=true
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/China.list, tag=China, enabled=true
+;https://raw.githubusercontent.com/crossutility/Quantumult-X/master/filter.txt, tag=Sample, force-policy=your-policy-name, enabled=true
+
+[rewrite_remote]
+https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Rewrite.conf, tag=DivineEngine Rewrite, enabled=true
+
+[server_local]
+
+[filter_local]
+
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 224.0.0.0/24, direct
+geoip, cn, direct
+final, Final
+
+[rewrite_local]
+
+[mitm]
+passphrase = E44C8B3C
+p12 = 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
